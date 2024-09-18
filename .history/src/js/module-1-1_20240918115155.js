@@ -80,20 +80,11 @@ console.log(fullName)
 // Виведи area в консоль.
   const radius = 5;
 
-  const area = 3.14*(radius**2);
-
+  const area = 3.14*(radius*radius);
+  
 console.log(area)
 
 
 // Створи змінну someString і присвой їй будь-який рядок.
 // Обчисли довжину цього рядка, використовуючи властивість .length.
 // Виведи довжину рядка в консоль.
-
-
-
-
-const someString = 'Hello World'; 
-
-const length = someString.length;
-
-console.log(length)
