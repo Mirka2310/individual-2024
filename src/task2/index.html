@@ -17,23 +17,51 @@
   <body>
     <div class="js-form-container fb fb-h">
       <form class="form box js-form">
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
+          <input type="text" 
+        class="form-control" 
+        name="js-form-car-brand" 
+        placeholder="Brand"/>
+           <input type="text" 
+        class="form-control" 
+        name="js-form-car-model" 
+        placeholder="Model"/>
+          <input type="text" 
+        class="form-control" 
+        name="js-form-car-image" 
+        placeholder="Image"/>
+        <textarea type="text" 
+        class="form-control" 
+        name="js-form-car-info"
+        rows="10"  
+        placeholder="Description">
+        </textarea>
 
         <button class="form-control" type="submit">Create item</button>
       </form>
-
-      <div class="box" style="width: fit-content">
+      
+      <div class="box" style="width: auto">
         <ul class="js-items list">
           <li class="box item hight">
-            <button class="form-control" data-type="show">SHOW MORE</button>
-            <button class="form-control" data-type="delete">DELETE</button>
-          </li>
-        </ul>
-      </div>
-    </div>
+            <h5>BMW-X-6</h5>
+            <div class="fb">
+              <p class="item-desc">
+                BMW X6 — це розкішний кросовер класу люкс, який поєднує в собі 
+                спортивну динаміку та елегантний дизайн. 
+                Вперше представлений у 2008 році, X6 став першим автомобілем BMW, 
+                який поєднав характеристики спортивного купе та SUV
+              </p>
+              <img
+                src="https://cdn.bmwblog.com/wp-content/uploads/2019/10/BMW-X6-M-Performance-Parts-1.jpg"
+                alt=""
+              />
+              <div class="buttons">
+                <button class="form-control" data-type="show">SHOW MORE</button>
+                <button class="form-control" data-type="delete">DELETE</button>
+              </div>
+              
+              </li>
+             </ul>
+            </div>
 
     <div class="backdrop">
       <div class="modalka"></div>

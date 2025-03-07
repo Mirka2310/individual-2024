@@ -17,27 +17,20 @@
   <body>
     <div class="js-form-container fb fb-h">
       <form class="form box js-form">
-        <input type="text" class="form-control" name="name" placeholder="name"/>
-        <input type="text" class="form-control" name="firstName" placeholder="firstName"/>
-        <input type="number" class="form-control" name="year" placeholder="year"/>
-        <input type="text" class="form-control" name="country" placeholder="country"/>
-        <input type="text" class="form-control" name="title" placeholder="title"/>
-        <input type="number" class="form-control" name="age" placeholder="age"/>
+        <input type="text" class="form-control" />
+        <input type="text" class="form-control" />
+        <input type="text" class="form-control" />
+        <input type="text" class="form-control" />
+
         <button class="form-control" type="submit">Create item</button>
       </form>
 
       <div class="box" style="width: fit-content">
-        <input type="text" class="form-control js-filter"/>
         <ul class="js-items list">
-
           <li class="box item hight">
-            <h3 class="name">Name</h3>
-            <h4 class="firstName">firstName</h4>
-            <p class="title">title</p>
-            <p class="country">country</p>
-            <p class="year">year</p>
-            <p class="age">age</p>
-            </li>
+            <button class="form-control" data-type="show">SHOW MORE</button>
+            <button class="form-control" data-type="delete">DELETE</button>
+          </li>
         </ul>
       </div>
     </div>
