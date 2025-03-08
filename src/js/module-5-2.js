@@ -240,6 +240,8 @@ const books = [
     rating: 4.8,
   },
 ];
+
+
 //////////////////////////////////////////////////////////////////////////////
 // find()- шукає і повертає один елемент
 // filter() - шукає і повертає масив 
@@ -283,7 +285,7 @@ const books = [
 // // 1. Знайти всі книги з ціною меншою ніж 10 доларів.
 
 // function task4(arr){
-//   const result = arr.find(book => book.price < 10);
+//   const result = arr.filter(book => book.price < 10);
 //   return result;
 // }
 // // 1. Знайти всі книги з рейтингом 4.8 і вище.
@@ -462,7 +464,7 @@ const books = [
 // function task1(arr, years){
 //   return arr.some((book)=> book.year > years);
 // }
-// console.log(task1(books));
+// console.log(task1(books, 1000));
 
 // 1. Чи є в масиві хоча б одна книга, автором якої є 'Fyodor Dostoevsky'?
 
@@ -476,7 +478,7 @@ const books = [
 
 
 // function task3(arr){
-//   return arr.some((book)=>book.price < 10);
+//   return arr.some((book) => book.price < 10);
 
 // }
 
@@ -968,13 +970,72 @@ const books = [
 
 // 1. Відсортувати книги за жанром у алфавітному порядку, але книги одного жанру за
 //    назвою у зворотньому алфавітному порядку.
+
+
+// function task9(array){
+// return array.toSorted((book1,book2)=>{
+// const genreCompare = book1.genre.localeCompare(book2.genre); 
+// if(genreCompare !== 0 ){
+//   return genreCompare;
+// }
+// return book2.title.localeCompare(book1.title);
+// });
+
+// }
+// const sortedBooks = task9(books);
+// console.log(sortedBooks);
+
 // 1. Відсортувати книги за ціною, але спочатку розташувати ті, які коштують менше
 //    10 доларів, потім решту.
+// function task10(arr){
+//   return arr.toSorted((book1, book2)=>{
+//     if(book1.price < 10 && book2.price >=10){
+//       return -1;
+//     }
+//     if(book1.price >= 10 && book2 < 10){
+//       return 1;
+//     }
+//     return book1.price - book2.price
+//   });
+// }
+
+// console.log(task10(books));
+
+
 // 1. Відсортувати книги за рейтингом, але спочатку розташувати ті, які мають
 //    рейтинг 4.8 і вище, потім решту.
+
+
+// function task11(arr){
+//   return arr.toSorted((book1, book2)=>{
+// if(book1.rating >= 4.8 && book2.rating < 4.8){
+//   return -1;
+// }
+// if(book1.rating < 4.8 && book2.rating >= 4.8){
+// return 1;
+// }
+// return book1.rating - book2.rating;
+//   })
+// }
+
+// console.log(task11(books));
+
+
 // 1. Відсортувати книги спочатку за жанром, а потім за роком видання.
 
+// function task12(arr){
+//   return arr.toSorted((book1, book2)=>{
+//     const genreCompare = book1.genre.localeCompare(book2.genre);
+// if(genreCompare !== 0){
+//   return genreCompare;
+// }
 
+// return book1.year - book2.year;
+//   });
+
+// }
+
+// console.log(task12(books));
 
 // 1. Отримати всі книги, видані після 2000 року та відсортувати їх за рейтингом
 //    від найвищого до найнижчого, повернути лише назви.

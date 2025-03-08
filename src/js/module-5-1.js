@@ -407,6 +407,22 @@
 // console.log(x11);
         /////////////////////
 // 1. Знайти першу книгу, видану після 2000 року.
+
+
+// function task22(number){
+// for(const book of books){
+//   if(book.year > number){
+// return book;
+//   }
+// }
+// return null;
+// }
+
+// const x22 = task22(-2000);
+// console.log(x22);
+
+///////////////
+
 // 1. Знайти першу книгу, автором якої є 'Fyodor Dostoevsky'.
 // 1. Знайти першу книгу з ціною меншою ніж 10 доларів.
 
@@ -694,8 +710,40 @@
 
 // 1. Створити масив об'єктів, де кожна книжка буде мати нове поле `discountPrice`,
 //    що дорівнює ціні зі знижкою 10%.
+
+
+// function task22(){
+//   const arr = [];
+//   for( const book of books){
+//     arr.push({
+//       ...book,
+//       discountPrice:book.price * 0.9
+//     });
+//     }
+//     return arr;
+//   }
+
+//   const discountedBooks = task22();
+//   console.log(discountedBooks);
+
 // 1. Створити масив об'єктів, що містять назву книжки та її ціну з доданим
 //    податком 15%.
+
+
+// function task33(){
+//   const array = [];
+//   for( const book of books){
+// array.push({
+//   title:book.title,
+//   price:book.price * 1.15
+// });
+//   } 
+//   return array;
+// }
+
+// const newBooks = task33();
+// console.log(newBooks);
+
 // 1. Створити масив назв книжок, які видані після 2000 року.
 // 1. Створити масив об'єктів, де кожна книжка буде мати нове поле `isClassic`, що
 //    дорівнює `true`, якщо книжка видана до 1950 року.
@@ -714,6 +762,8 @@
 //    записаний у нижньому регістрі.
 
 // ---
+
+
 
 // 1. Відсортувати книги за роком видання від найдавнішого до найновішого.
 // 1. Відсортувати книги за ціною від найнижчої до найвищої.
