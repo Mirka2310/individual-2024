@@ -1,245 +1,245 @@
-const books = [
-  {
-    title: 'To Kill a Mockingbird',
-    author: 'Harper Lee',
-    year: 1960,
-    genre: 'Fiction',
-    price: 10.99,
-    rating: 4.9,
-  },
-  {
-    title: '1984',
-    author: 'George Orwell',
-    year: 1949,
-    genre: 'Dystopian',
-    price: 8.99,
-    rating: 4.8,
-  },
-  {
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-    year: 1925,
-    genre: 'Classic',
-    price: 7.99,
-    rating: 4.7,
-  },
-  {
-    title: 'The Catcher in the Rye',
-    author: 'J.D. Salinger',
-    year: 1951,
-    genre: 'Fiction',
-    price: 6.99,
-    rating: 4.6,
-  },
-  {
-    title: 'Pride and Prejudice',
-    author: 'Jane Austen',
-    year: 1813,
-    genre: 'Romance',
-    price: 5.99,
-    rating: 4.9,
-  },
-  {
-    title: 'The Hobbit',
-    author: 'J.R.R. Tolkien',
-    year: 1937,
-    genre: 'Fantasy',
-    price: 12.99,
-    rating: 4.8,
-  },
-  {
-    title: 'Moby Dick',
-    author: 'Herman Melville',
-    year: 1851,
-    genre: 'Adventure',
-    price: 9.99,
-    rating: 4.5,
-  },
-  {
-    title: 'War and Peace',
-    author: 'Leo Tolstoy',
-    year: 1869,
-    genre: 'Historical',
-    price: 14.99,
-    rating: 4.9,
-  },
-  {
-    title: 'Crime and Punishment',
-    author: 'Fyodor Dostoevsky',
-    year: 1866,
-    genre: 'Philosophical',
-    price: 11.99,
-    rating: 4.8,
-  },
-  {
-    title: 'The Brothers Karamazov',
-    author: 'Fyodor Dostoevsky',
-    year: 1880,
-    genre: 'Philosophical',
-    price: 13.99,
-    rating: 4.9,
-  },
-  {
-    title: 'Brave New World',
-    author: 'Aldous Huxley',
-    year: 1932,
-    genre: 'Dystopian',
-    price: 9.99,
-    rating: 4.7,
-  },
-  {
-    title: 'Jane Eyre',
-    author: 'Charlotte Brontë',
-    year: 1847,
-    genre: 'Romance',
-    price: 7.99,
-    rating: 4.8,
-  },
-  {
-    title: 'Wuthering Heights',
-    author: 'Emily Brontë',
-    year: 1847,
-    genre: 'Romance',
-    price: 8.99,
-    rating: 4.7,
-  },
-  {
-    title: 'The Picture of Dorian Gray',
-    author: 'Oscar Wilde',
-    year: 1890,
-    genre: 'Gothic',
-    price: 6.99,
-    rating: 4.6,
-  },
-  {
-    title: 'Frankenstein',
-    author: 'Mary Shelley',
-    year: 1818,
-    genre: 'Science Fiction',
-    price: 7.99,
-    rating: 4.7,
-  },
-  {
-    title: 'Dracula',
-    author: 'Bram Stoker',
-    year: 1897,
-    genre: 'Horror',
-    price: 6.99,
-    rating: 4.5,
-  },
-  {
-    title: 'The Odyssey',
-    author: 'Homer',
-    year: -800,
-    genre: 'Epic',
-    price: 10.99,
-    rating: 4.9,
-  },
-  {
-    title: 'The Iliad',
-    author: 'Homer',
-    year: -750,
-    genre: 'Epic',
-    price: 9.99,
-    rating: 4.8,
-  },
-  {
-    title: 'Les Misérables',
-    author: 'Victor Hugo',
-    year: 1862,
-    genre: 'Historical',
-    price: 11.99,
-    rating: 4.9,
-  },
-  {
-    title: 'The Count of Monte Cristo',
-    author: 'Alexandre Dumas',
-    year: 1844,
-    genre: 'Adventure',
-    price: 12.99,
-    rating: 4.9,
-  },
-  {
-    title: 'The Grapes of Wrath',
-    author: 'John Steinbeck',
-    year: 1939,
-    genre: 'Fiction',
-    price: 8.99,
-    rating: 4.7,
-  },
-  {
-    title: 'Of Mice and Men',
-    author: 'John Steinbeck',
-    year: 1937,
-    genre: 'Fiction',
-    price: 7.99,
-    rating: 4.6,
-  },
-  {
-    title: 'A Tale of Two Cities',
-    author: 'Charles Dickens',
-    year: 1859,
-    genre: 'Historical',
-    price: 9.99,
-    rating: 4.8,
-  },
-  {
-    title: 'Great Expectations',
-    author: 'Charles Dickens',
-    year: 1861,
-    genre: 'Fiction',
-    price: 8.99,
-    rating: 4.7,
-  },
-  {
-    title: 'The Secret Garden',
-    author: 'Frances Hodgson Burnett',
-    year: 1911,
-    genre: 'Children',
-    price: 6.99,
-    rating: 4.7,
-  },
-  {
-    title: 'Little Women',
-    author: 'Louisa May Alcott',
-    year: 1868,
-    genre: 'Fiction',
-    price: 7.99,
-    rating: 4.8,
-  },
-  {
-    title: 'Anna Karenina',
-    author: 'Leo Tolstoy',
-    year: 1877,
-    genre: 'Romance',
-    price: 10.99,
-    rating: 4.9,
-  },
-  {
-    title: 'The Adventures of Sherlock Holmes',
-    author: 'Arthur Conan Doyle',
-    year: 1892,
-    genre: 'Mystery',
-    price: 9.99,
-    rating: 4.8,
-  },
-  {
-    title: 'The Lord of the Rings',
-    author: 'J.R.R. Tolkien',
-    year: 1954,
-    genre: 'Fantasy',
-    price: 20.99,
-    rating: 4.9,
-  },
-  {
-    title: "Harry Potter and the Sorcerer's Stone",
-    author: 'J.K. Rowling',
-    year: 1997,
-    genre: 'Fantasy',
-    price: 10.99,
-    rating: 4.8,
-  },
-];
+// const books = [
+//   {
+//     title: 'To Kill a Mockingbird',
+//     author: 'Harper Lee',
+//     year: 1960,
+//     genre: 'Fiction',
+//     price: 10.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: '1984',
+//     author: 'George Orwell',
+//     year: 1949,
+//     genre: 'Dystopian',
+//     price: 8.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'The Great Gatsby',
+//     author: 'F. Scott Fitzgerald',
+//     year: 1925,
+//     genre: 'Classic',
+//     price: 7.99,
+//     rating: 4.7,
+//   },
+//   {
+//     title: 'The Catcher in the Rye',
+//     author: 'J.D. Salinger',
+//     year: 1951,
+//     genre: 'Fiction',
+//     price: 6.99,
+//     rating: 4.6,
+//   },
+//   {
+//     title: 'Pride and Prejudice',
+//     author: 'Jane Austen',
+//     year: 1813,
+//     genre: 'Romance',
+//     price: 5.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: 'The Hobbit',
+//     author: 'J.R.R. Tolkien',
+//     year: 1937,
+//     genre: 'Fantasy',
+//     price: 12.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'Moby Dick',
+//     author: 'Herman Melville',
+//     year: 1851,
+//     genre: 'Adventure',
+//     price: 9.99,
+//     rating: 4.5,
+//   },
+//   {
+//     title: 'War and Peace',
+//     author: 'Leo Tolstoy',
+//     year: 1869,
+//     genre: 'Historical',
+//     price: 14.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: 'Crime and Punishment',
+//     author: 'Fyodor Dostoevsky',
+//     year: 1866,
+//     genre: 'Philosophical',
+//     price: 11.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'The Brothers Karamazov',
+//     author: 'Fyodor Dostoevsky',
+//     year: 1880,
+//     genre: 'Philosophical',
+//     price: 13.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: 'Brave New World',
+//     author: 'Aldous Huxley',
+//     year: 1932,
+//     genre: 'Dystopian',
+//     price: 9.99,
+//     rating: 4.7,
+//   },
+//   {
+//     title: 'Jane Eyre',
+//     author: 'Charlotte Brontë',
+//     year: 1847,
+//     genre: 'Romance',
+//     price: 7.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'Wuthering Heights',
+//     author: 'Emily Brontë',
+//     year: 1847,
+//     genre: 'Romance',
+//     price: 8.99,
+//     rating: 4.7,
+//   },
+//   {
+//     title: 'The Picture of Dorian Gray',
+//     author: 'Oscar Wilde',
+//     year: 1890,
+//     genre: 'Gothic',
+//     price: 6.99,
+//     rating: 4.6,
+//   },
+//   {
+//     title: 'Frankenstein',
+//     author: 'Mary Shelley',
+//     year: 1818,
+//     genre: 'Science Fiction',
+//     price: 7.99,
+//     rating: 4.7,
+//   },
+//   {
+//     title: 'Dracula',
+//     author: 'Bram Stoker',
+//     year: 1897,
+//     genre: 'Horror',
+//     price: 6.99,
+//     rating: 4.5,
+//   },
+//   {
+//     title: 'The Odyssey',
+//     author: 'Homer',
+//     year: -800,
+//     genre: 'Epic',
+//     price: 10.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: 'The Iliad',
+//     author: 'Homer',
+//     year: -750,
+//     genre: 'Epic',
+//     price: 9.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'Les Misérables',
+//     author: 'Victor Hugo',
+//     year: 1862,
+//     genre: 'Historical',
+//     price: 11.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: 'The Count of Monte Cristo',
+//     author: 'Alexandre Dumas',
+//     year: 1844,
+//     genre: 'Adventure',
+//     price: 12.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: 'The Grapes of Wrath',
+//     author: 'John Steinbeck',
+//     year: 1939,
+//     genre: 'Fiction',
+//     price: 8.99,
+//     rating: 4.7,
+//   },
+//   {
+//     title: 'Of Mice and Men',
+//     author: 'John Steinbeck',
+//     year: 1937,
+//     genre: 'Fiction',
+//     price: 7.99,
+//     rating: 4.6,
+//   },
+//   {
+//     title: 'A Tale of Two Cities',
+//     author: 'Charles Dickens',
+//     year: 1859,
+//     genre: 'Historical',
+//     price: 9.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'Great Expectations',
+//     author: 'Charles Dickens',
+//     year: 1861,
+//     genre: 'Fiction',
+//     price: 8.99,
+//     rating: 4.7,
+//   },
+//   {
+//     title: 'The Secret Garden',
+//     author: 'Frances Hodgson Burnett',
+//     year: 1911,
+//     genre: 'Children',
+//     price: 6.99,
+//     rating: 4.7,
+//   },
+//   {
+//     title: 'Little Women',
+//     author: 'Louisa May Alcott',
+//     year: 1868,
+//     genre: 'Fiction',
+//     price: 7.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'Anna Karenina',
+//     author: 'Leo Tolstoy',
+//     year: 1877,
+//     genre: 'Romance',
+//     price: 10.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: 'The Adventures of Sherlock Holmes',
+//     author: 'Arthur Conan Doyle',
+//     year: 1892,
+//     genre: 'Mystery',
+//     price: 9.99,
+//     rating: 4.8,
+//   },
+//   {
+//     title: 'The Lord of the Rings',
+//     author: 'J.R.R. Tolkien',
+//     year: 1954,
+//     genre: 'Fantasy',
+//     price: 20.99,
+//     rating: 4.9,
+//   },
+//   {
+//     title: "Harry Potter and the Sorcerer's Stone",
+//     author: 'J.K. Rowling',
+//     year: 1997,
+//     genre: 'Fantasy',
+//     price: 10.99,
+//     rating: 4.8,
+//   },
+// ];
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -1122,3 +1122,207 @@ const books = [
 
 // 1. Отримати всі книги жанру 'Historical' з рейтингом вище 4.7, відсортувати їх
 //    за роком видання від найдавнішого до найновішого та вивести останні 3 книги.
+
+
+// function task33(arr) {
+//   const result = arr.filter((book)=>book.genre === 'Historical' && book.rating > 4.7)
+//   .toSorted((book1, book2)=> book1.year - book2.year);
+//   const newArr = result.map((book)=> book.year);
+//   const lastThreeBooks = newArr.slice(-3);
+//   return lastThreeBooks;
+// }
+
+// console.table(task33(books));
+
+
+
+// Метод find
+// Задача 1
+// // Є масив об'єктів з товарами:
+// Знайди перший товар, ціна якого більше ніж 1000.
+
+
+// const products = [
+//   { id: 1, name: 'Laptop', price: 1500 },
+//   { id: 2, name: 'Phone', price: 800 },
+//   { id: 3, name: 'Tablet', price: 1200 }
+// ];
+
+
+// function taskProdukt(arr) {
+//  return arr.find((produkt)=>produkt.price > 1000)
+
+  
+// }
+// console.log(taskProdukt(products));
+
+// Задача 2
+// Є масив об'єктів з користувачами:
+// Знайди першого користувача, який є адміністратором.
+
+// const users = [
+//   { id: 1, name: 'Anna', isAdmin: false },
+//   { id: 2, name: 'Oleg', isAdmin: true },
+//   { id: 3, name: 'Maria', isAdmin: false }
+// ];
+
+// function taskUsers(arr){
+//   return arr.find((user)=> user.isAdmin === true)
+// }
+// console.log(taskUsers(users));
+
+
+// Метод filter
+// Задача 3
+// Є масив об'єктів з книгами:
+// Створи новий масив книг, які мають більше 200 сторінок.
+
+
+
+// const books = [
+//   { title: 'Book A', pages: 150 },
+//   { title: 'Book B', pages: 300 },
+//   { title: 'Book C', pages: 200 }
+// ];
+
+
+
+// function taskBook(arr){
+//   return arr.filter((book)=> book.pages === 200)
+// }
+// console.log(taskBook(books));
+
+
+// Задача 4
+// Є масив об'єктів з працівниками:
+// Відфільтруй тих працівників, які молодші за 30 років.
+
+
+
+// const employees = [
+//   { name: 'Ivan', age: 25 },
+//   { name: 'Svitlana', age: 35 },
+//   { name: 'Petro', age: 30 }
+// ];
+
+
+// function taskEmployees(arr, number){
+//    return arr.filter((employee)=> employee.age < number)
+  
+
+// }
+// console.log(taskEmployees(employees, 35));
+
+
+// Метод some
+// Задача 5
+// Є масив об'єктів з завданнями:
+// Перевір, чи є хоча б одне виконане завдання.
+
+// const tasks = [
+//   { id: 1, title: 'Buy milk', completed: false },
+//   { id: 2, title: 'Do homework', completed: false },
+//   { id: 3, title: 'Call mom', completed: true }
+// ];
+
+
+
+// function taskAndTasks(arr){
+//   return arr.some((task)=> task.completed === true)
+    
+// }
+// console.log(taskAndTasks(tasks));
+
+
+// Задача 6
+// Є масив об'єктів з замовленнями:
+// Перевір, чи є хоча б одне доставлене замовлення.
+
+
+
+// const orders = [
+//   { id: 1, total: 100, delivered: false },
+//   { id: 2, total: 200, delivered: false },
+//   { id: 3, total: 300, delivered: true }
+// ];
+
+
+// function taskOrder(arr){
+//   return arr.some((order)=> order.delivered === true)
+// }
+// console.log(taskOrder(orders));
+
+
+// Метод every
+// Задача 7
+// Є масив об'єктів зі студентами:
+// Перевір, чи всі студенти здали екзамен.
+
+// const students = [
+//   { name: 'Olena', passed: true },
+//   { name: 'Dmytro', passed: true },
+//   { name: 'Ihor', passed: true }
+// ];
+
+// function taskStudent(arr){
+//   return arr.every((student)=>student.passed === true)
+// }
+
+// console.log(taskStudent(students));
+
+
+// Задача 8
+// Є масив об'єктів з товарами:
+// Перевір, чи всі товари є в наявності.
+
+
+// const products = [
+//   { name: 'TV', inStock: true },
+//   { name: 'Radio', inStock: true },
+//   { name: 'Fridge', inStock: true }
+// ];
+
+
+// function taskProdukt(arr){
+//   return arr.every((product)=>product.inStock === true)
+
+// }
+
+// console.log(taskProdukt(products));
+
+
+// Метод map
+// Задача 9
+// Є масив об'єктів з людьми:
+// Створи новий масив, де кожна людина представлена як рядок типу: "Name: Max, Age: 20".
+
+// const people = [
+//   { name: 'Max', age: 20 },
+//   { name: 'Liza', age: 25 }
+// ];
+
+
+
+// function taskPeople(arr){
+//   return arr.map((person) => `Name: ${person.name}, Age: ${person.age}`);
+// }
+
+// console.log(taskPeople(people));
+
+
+// Задача 10
+// Є масив об'єктів з товарами:
+// Створи новий масив цін (без назв товарів).
+
+// const products = [
+//   { name: 'Book', price: 100 },
+//   { name: 'Pen', price: 20 }
+// ];
+
+
+// function taskProduct(arr){
+//   return arr.map((product)=> `price: ${product.price}`);
+// }
+ 
+// console.log(taskProduct(products));
+
